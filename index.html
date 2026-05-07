@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmanda</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+
+    <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+       
+    <h2>Ikuti Saya</h2>
+    <p>Pilih sosial media:</p>
+
+    <div class="social-icons">
+      <a href="https://www.youtube.com/@Dmeviz89" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="container">
+    <div class="logo">
+      <img src="logo.png" alt="logo">
+    </div>
+
+    <ul>
+      <li class="active">Home</li>
+      <li>Services</li>
+      <li>Portfolio</li>
+      <li>Contact</li>
+    </ul>
+
+    <button class="btn" onclick="openPopup()">Follow Me</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero container">
+  <div class="hero-text">
+    <h4>Hi, I am</h4>
+    <h1>EGI RISKI SALOMON FIRMANDA</h1>
+    <h3>Microsoft Office Expert</h3>
+    <p>A Microsoft Office expert is a professional who has expertise in using applications such as Word, Excel, and PowerPoint to create documents, process data, and deliver effective presentations.</p>
+    <div class="buttons">
+      <a href="https://wa.me/6281649462859?text=Halo%20saya%20tertarik%20dengan%20jasa%20Anda" target="_blank" class="btn">
+      <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <button class="btn-outline">Discuss More</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="profile.png" alt="profile">
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-wrapper">
+  <section class="skills container">
+  
+  <div class="skill-box">
+    <div class="skill-img">
+      <img src="Word.png" alt="Microsoft Word">
+    </div>
+
+    <div class="skill-text">
+      <h3>Microsoft Word</h3>
+      <p><b>Experience</b></p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="skill-box">
+    <div class="skill-img">
+      <img src="Excel.png" alt="Microsoft Excel">
+    </div>
+
+    <div class="skill-text">
+      <h3>Microsoft Excel</h3>
+      <p><b>Experience</b></p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="skill-box">
+    <div class="skill-img">
+      <img src="Point.png" alt="Microsoft PowerPoint">
+    </div>
+
+    <div class="skill-text">
+      <h3>Microsoft PowerPoint</h3>
+      <p><b>Experience</b></p>
+    </div>
+  </div>
+  </section>
+</section>
+
+<script>
+  function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    let popup = document.getElementById("popup");
+    if (event.target === popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
